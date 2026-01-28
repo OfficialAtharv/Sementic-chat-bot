@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    fetch("http://127.0.0.1:8000/chat", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        query: "What is semantic search?",
+      }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log("Backend response:", data);
+      })
+      .catch((err) => {
+        console.error("Error calling backend:", err);
+      });
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h2>React → FastAPI connection test</h2>
+      <p>Check browser console</p>
     </div>
   );
 }
