@@ -67,6 +67,3 @@ UI Highlights
 <img width="1909" height="913" alt="image" src="https://github.com/user-attachments/assets/fced8dba-b433-4f1e-b63e-2912d93c1e5c" />
 
 
-
-
-## 📁 Project Structure
