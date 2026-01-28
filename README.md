@@ -54,26 +54,7 @@ This ensures **accuracy and no hallucination**.
 
 ---
 
-## 📁 Project Structure
-rag_chatbot/
-│
-├── backend/
-│ ├── app.py
-│ └── pycache/
-│
-├── src/
-│ ├── Assets/
-│ │ └── antiqAI.png
-│ ├── App.js
-│ ├── App.css
-│ ├── index.js
-│ └── index.css
-│
-├── public/
-│ └── index.html
-│
-├── package.json
-└── README.md
+
 
 UI Highlights
 . Right-aligned User messages
